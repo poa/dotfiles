@@ -1,0 +1,25 @@
+alias c='pygmentize -g -O style=gruvbox-dark'
+alias cm='~/bin/chezmoi --color true'
+
+alias grep='grep --color'
+alias less='less -r'
+
+alias ls='ls --color'
+alias l='ls -1 --color'
+alias l.='ls -1d .* --color'
+alias ll='ls -la --color'
+alias ll.='ls -ld .* --color'
+
+alias k='kubectl $@'
+
+alias s='sudo'
+
+if [ "$SHELL" = "/usr/bin/zsh" ]; then
+  alias pal='
+    for i in {0..15};   do print -Pn "%K{$i}   %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%8)):#7}:+$'"'"'\n'"'"'}; done
+    for i in {16..255}; do print -Pn "%K{$i}   %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'"'"'\n'"'"'}; done
+    '
+  alias pal16='
+    for i in {0..15};   do print -Pn "%K{$i}   %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%8)):#7}:+$'"'"'\n'"'"'}; done
+    '
+fi
