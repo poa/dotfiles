@@ -14,6 +14,8 @@ alias k='kubectl $@'
 
 alias s='sudo'
 
+alias ip='ip -c'
+
 if [ "$SHELL" = "/usr/bin/zsh" ]; then
   alias pal='
     for i in {0..15};   do print -Pn "%K{$i}   %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%8)):#7}:+$'"'"'\n'"'"'}; done
