@@ -8,7 +8,8 @@ cm add ~/.byobu
 #cm add ~/.oh-my-zsh/custom
 cm add ~/.vim/vimrc
 cm add ~/.vim/*.vim
-cm add -e ~/.vim/autoload/.keep
+#cm add -e ~/.vim/autoload/.keep
+cm add ~/.vim/autoload
 cm add ~/.vim/pack/
 
 # Files

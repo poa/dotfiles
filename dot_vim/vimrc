@@ -88,10 +88,14 @@ set listchars=eol:¶,tab:»·,trail:·,extends:>,precedes:< "For Unicode fonts
 "let g:airline_theme='onedark'
 "colorscheme seoul256
 
-colorscheme onedark
+" colorscheme onedark
+" let g:airline_theme='onedark'
+
+set bg=dark
+let g:airline_theme='gruvbox8'
+colorscheme gruvbox8
 
 """ air-line
-let g:airline_theme='onedark'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#tab_nr_type = 2

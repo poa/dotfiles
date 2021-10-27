@@ -13,7 +13,6 @@
  Plug 'christoomey/vim-tmux-navigator'
  Plug 'airblade/vim-gitgutter'
  Plug 'tpope/vim-fugitive'
- "Plug 'cespare/vim-toml', { 'branch': 'main' }
  Plug 'poa/vim-toml', { 'branch': 'main' }
  
  " Statuslines
