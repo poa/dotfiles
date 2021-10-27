@@ -106,12 +106,19 @@ plugins=(
   docker-compose
   kubectl
   helm
+  ssh-agent
   vi-mode
   zsh-syntax-highlighting
   zsh-autosuggestions
 #  tmux	
 )
 
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+zstyle :omz:plugins:ssh-agent lazy yes
+zstyle :omz:plugins:ssh-agent lifetime 4h
+#zstyle :omz:plugins:ssh-agent identities ~/.ssh/id_ed25519
+
+# *** Init OhMyZSH
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
