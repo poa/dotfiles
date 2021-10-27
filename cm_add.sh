@@ -1,13 +1,15 @@
 #!/bin/sh
 
-alias cm='~/bin/chezmoi -v -S ~/.local/share/chezmoi.test'
+#alias cm='~/bin/chezmoi -v -S ~/.local/share/chezmoi.test'
+alias cm='~/bin/chezmoi -v'
 
-# folders
 cm add ~/.byobu
 #cm add ~/.#mux/
 #cm add ~/.oh-my-zsh/custom
 cm add ~/.vim/vimrc
 cm add ~/.vim/*.vim
+cm add ~/.vim/autoload/.keep
+cm add ~/.vim/pack/
 
 # Files
 cm add ~/.bash_aliases
