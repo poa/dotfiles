@@ -1,4 +1,4 @@
-alias c='pygmentize -g -O style=gruvbox-dark'
+alias c='pygmentize -g -O style=gruvbox'
 alias cm='~/bin/chezmoi --color true'
 alias chezmoi='~/bin/chezmoi --color true'
 
