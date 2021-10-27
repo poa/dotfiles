@@ -1,0 +1,122 @@
+" https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
+
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+
+source ~/.vim/plugins.vim " include plugs
+
+
+" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+
+filetype on 		" Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype plugin on 	" Enable plugins and load plugin for the detected file type.
+filetype indent on 	" Load an indent file for the detected file type.
+
+" Turn syntax highlighting on.
+syntax on
+
+" Add numbers to each line on the left-hand side.
+set number
+
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Highlight cursor line underneath the cursor vertically.
+set cursorcolumn
+
+" Enable visible right margin
+set colorcolumn=80
+
+" Ignore capital letters during search.
+set ignorecase
+
+" While searching though a file incrementally highlight matching characters as you type.
+set incsearch
+
+" Show matching words during a search.
+set showmatch
+
+" Use highlighting when doing a search.
+set hlsearch
+
+set showcmd
+set cmdheight=1
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+set laststatus=2    " Always show the statusline
+set noshowmode      " showmode is unnecessary when status line is enabled
+set encoding=utf-8  " Necessary to show Unicode glyphs
+
+" tab parameters
+set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+
+" show invisible space chars
+set list
+set listchars=eol:¶,tab:»·,trail:·,extends:>,precedes:< "For Unicode fonts
+"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< "For non Unicode fonts
+
+""" Turn on color theme
+
+" Dracula theme
+"packadd! dracula_pro
+"let g:dracula_colorterm = 0
+"let g:dracula_italic = 0
+"colorscheme dracula_pro_lincoln
+
+" neodark theme
+let g:neodark#background = '#2C2A21'
+let g:neodark#background = '#202020'
+" let g:neodark#terminal_transparent = 1
+colorscheme neodark
+
+
+" Seoul245 theme
+"let g:seoul256_background = 233
+"let g:seoul256_light_background = 256
+"let g:airline_theme='onedark'
+"colorscheme seoul256
+
+
+""" air-line
+let g:airline_theme='onedark'
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#tab_nr_type = 2
+" let g:airline#extensions#tabline#show_tab_nr = 1
+  let g:airline#extensions#tabline#buffer_idx_mode = 1
+  nmap <leader>1 <Plug>AirlineSelectTab1
+  nmap <leader>2 <Plug>AirlineSelectTab2
+  nmap <leader>3 <Plug>AirlineSelectTab3
+  nmap <leader>4 <Plug>AirlineSelectTab4
+  nmap <leader>5 <Plug>AirlineSelectTab5
+  nmap <leader>6 <Plug>AirlineSelectTab6
+  nmap <leader>7 <Plug>AirlineSelectTab7
+  nmap <leader>8 <Plug>AirlineSelectTab8
+  nmap <leader>9 <Plug>AirlineSelectTab9
+  nmap <leader>0 <Plug>AirlineSelectTab0
+  nmap <leader>- <Plug>AirlineSelectPrevTab
+  nmap <leader>+ <Plug>AirlineSelectNextTab
+
+let g:bufferline_show_bufnr = 1
+let g:bufferline_echo = 0
+
+
+
+" ========================================
+" Keybindings
+
+" Toggle show special symbols
+"nmap    <F12>   :set cursorcolumn! cursorline! list!<CR>
+nmap    <F12>   :set list!<CR>

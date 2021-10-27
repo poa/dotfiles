@@ -1,5 +1,7 @@
 alias c='pygmentize -g -O style=gruvbox-dark'
 alias cm='~/bin/chezmoi --color true'
+alias chezmoi='~/bin/chezmoi --color true'
+
 
 alias grep='grep --color'
 alias less='less -r'
