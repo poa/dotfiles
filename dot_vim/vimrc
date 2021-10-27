@@ -76,10 +76,10 @@ set listchars=eol:¶,tab:»·,trail:·,extends:>,precedes:< "For Unicode fonts
 "colorscheme dracula_pro_lincoln
 
 " neodark theme
-let g:neodark#background = '#2C2A21'
-let g:neodark#background = '#202020'
+" let g:neodark#background = '#2C2A21'
+" let g:neodark#background = '#202020'
 " let g:neodark#terminal_transparent = 1
-colorscheme neodark
+" colorscheme neodark
 
 
 " Seoul245 theme
@@ -88,6 +88,7 @@ colorscheme neodark
 "let g:airline_theme='onedark'
 "colorscheme seoul256
 
+colorscheme onedark
 
 """ air-line
 let g:airline_theme='onedark'
