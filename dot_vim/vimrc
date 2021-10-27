@@ -120,3 +120,10 @@ let g:bufferline_echo = 0
 " Toggle show special symbols
 "nmap    <F12>   :set cursorcolumn! cursorline! list!<CR>
 nmap    <F12>   :set list!<CR>
+
+nnoremap vv <c-v>
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
