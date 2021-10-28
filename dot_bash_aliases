@@ -12,7 +12,8 @@ alias l.='ls -1d .* --color'
 alias ll='ls -la --color'
 alias ll.='ls -ld .* --color'
 
-alias k='kubectl $@'
+alias k='kubectl'
+alias mk='minikube'
 
 alias s='sudo'
 

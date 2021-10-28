@@ -104,8 +104,9 @@ plugins=(
   git
   docker
   docker-compose
-  kubectl
   helm
+  kubectl
+  minikube
   ssh-agent
   vi-mode
   zsh-syntax-highlighting
@@ -151,9 +152,8 @@ setopt KSH_OPTION_PRINT
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.bash_aliases
-source <(kubectl completion zsh)
-
-complete -F __start_kubectl k
+# source <(kubectl completion zsh)
+# complete -F __start_kubectl k
 complete -F __start_chezmoi cm
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
