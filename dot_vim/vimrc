@@ -123,8 +123,8 @@ let g:bufferline_echo = 0
 " Keybindings
 
 " Toggle show special symbols
-"nmap    <F12>   :set cursorcolumn! cursorline! list!<CR>
-nmap    <F12>   :set list!<CR>
+"nmap    <F12>   :set cursorcolumn! cursorline! list! number!<CR>
+nmap    <F12>   :set list! number!<CR>
 
 nnoremap vv <c-v>
 nnoremap <Tab> >>_
