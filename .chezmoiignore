@@ -1,2 +1,4 @@
 #.vim/autoload
 #.vim/plugged/
+**/*.zwc
+.oh-my-zsh/cache/
