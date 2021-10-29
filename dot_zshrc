@@ -108,7 +108,7 @@ plugins=(
   kubectl
   minikube
   ssh-agent
-  vi-mode
+#  vi-mode
   zsh-syntax-highlighting
   zsh-autosuggestions
 #  tmux	

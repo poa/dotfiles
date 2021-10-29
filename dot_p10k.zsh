@@ -37,7 +37,7 @@
     vcs                     # git status
     # =========================[ Line #2 ]=========================
     newline                 # \n
-    vi_mode
+#    vi_mode
     prompt_char             # prompt symbol
   )
 
