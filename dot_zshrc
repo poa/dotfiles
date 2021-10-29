@@ -154,6 +154,7 @@ setopt KSH_OPTION_PRINT
 source $HOME/.bash_aliases
 # source <(kubectl completion zsh)
 # complete -F __start_kubectl k
+source <(~/bin/chezmoi completion zsh)
 complete -F __start_chezmoi cm
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

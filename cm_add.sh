@@ -14,7 +14,7 @@ cm add ~/.vim/pack/
 
 # Files
 cm add ~/.bash_aliases
-cm add ~/.bashrc
+cm add ~/.bashrc   
 cm add ~/.inputrc
 cm add ~/.p10k.*
 cm add ~/.tmux.conf
