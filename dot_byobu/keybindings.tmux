@@ -1,9 +1,9 @@
-unbind-key -n C-a
+source $BYOBU_PREFIX/share/byobu/keybindings/f-keys.tmux.disable unbind-key -n C-a
 set -g prefix ^A
 set -g prefix2 ^A
 bind a send-prefix
 
-# reload tmux config with C-a R                                                    
+# reload tmux config with C-a R
 bind-key R source-file ~/.byobu/.tmux.conf \; display-message ".tmux.conf reloaded"
 
 # open new vertical split with C-a V
@@ -22,3 +22,5 @@ bind -n M-l select-pane -R
 bind -n M-k select-pane -U
 bind -n M-j select-pane -D
 
+# Switch layout
+bind N next-layout
