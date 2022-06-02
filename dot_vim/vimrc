@@ -120,16 +120,17 @@ let g:bufferline_echo = 0
 " ========================================
 " Keybindings
 
+nmap     <F8> :call StripTrailingWhitespaces() <CR>
+nnoremap <F9> :call ToggleShowWhitespace()<CR>
+" highlight ExtraWhitespace ctermbg=red guibg=red
+nmap    <F10> :q <CR>
+
 " Toggle special symbols
 "nmap    <F12>   :set cursorcolumn! cursorline! list! number!<CR>
 nmap <F12>  :set list! number! <CR>
            \:IndentLinesToggle <CR>
            \:GitGutterBufferToggle <CR>
-nmap <F8> :call StripTrailingWhitespaces() <CR>
-
 " nnoremap <Leader>ws :call ToggleShowWhitespace()<CR>
-nnoremap <F9> :call ToggleShowWhitespace()<CR>
-" highlight ExtraWhitespace ctermbg=red guibg=red
 
 nnoremap vv <c-v>
 nnoremap <Tab> >>_
