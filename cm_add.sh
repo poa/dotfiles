@@ -4,7 +4,7 @@
 alias cm='~/bin/chezmoi -v'
 
 cm add ~/.byobu
-#cm add ~/.#mux/
+#cm add ~/.tmux/
 #cm add ~/.oh-my-zsh/custom
 cm add ~/.vim/vimrc
 cm add ~/.vim/*.vim
@@ -14,7 +14,7 @@ cm add ~/.vim/pack/
 
 # Files
 cm add ~/.bash_aliases
-cm add ~/.bashrc   
+cm add ~/.bashrc
 cm add ~/.inputrc
 cm add ~/.p10k.*
 cm add ~/.tmux.conf

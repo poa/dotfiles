@@ -1,0 +1,218 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/poa/
+	..
+1649393340
+'b
+	/home/poa/bin/
+	..
+1649393340
+'h
+	/home/poa/
+	..
+1649393340
+'z
+	/home/poa/.config/vifm
+	..
+1649393340
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/poa
+	bin
+1
+d/home/poa/bin
+	..
+0
+d/home/poa
+	distr
+2
+d/home/poa/distr
+	..
+0
+d/home/poa
+	distr
+2
+d/
+	proc
+11
+d/proc
+	..
+0
+d/
+	tmp
+17
+d/tmp
+	test
+5
+d/
+	tmp
+17
+d/tmp
+	test
+5
+d/
+	tmp
+17
+d/tmp
+	test
+5
+d/
+	tmp
+17
+d/tmp
+	test
+5
+d/
+	tmp
+17
+d/tmp
+	test
+5
+d/
+	tmp
+17
+d/tmp
+	test
+5
+d/
+	tmp
+17
+d/tmp
+	tmux-1000
+3
+d/tmp/tmux-1000
+	..
+0
+d/tmp
+	..
+0
+d/
+	lost+found
+7
+d/home
+	..
+0
+d/home/poa
+	bin
+1
+d/home
+	poa
+1
+d/home/poa
+	bin
+1
+d/home/poa/bin
+	..
+0
+d/home/poa
+	distr
+2
+d/home/poa/distr
+	..
+0
+d/home/poa
+	distr
+2
+d/home/poa/distr
+	..
+0
+d/home/poa
+	distr
+2
+d/home/poa/distr
+	..
+0
+d/home/poa
+	..
+0
+d/home
+	poa
+1
+d/home/poa
+	distr
+2
+d/home/poa/distr
+	..
+0
+d/home/poa
+	bin
+1
+d/home/poa/bin
+	..
+0
+d/home/poa
+	..
+0
+d/home
+	..
+0
+d/
+	home
+4
+d/home
+	poa
+1
+d/home/poa
+	distr
+2
+d/home/poa/distr
+	..
+0
+d
+
+# Right window history (oldest to newest):
+D/home/poa
+	..
+0
+D
+
+# Command line history (oldest to newest):
+:cd /
+:help
+:touch test
+:cd /home
+:cd home/poa
+:cd poa
+:sync
+:browsh
+:ping ya.ru
+:q
+
+# Search history (oldest to newest):
+/ho
+/p
+/di
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+
+# State:
+f
+i1
+[.1
+[F
+F
+I1
+].1
+]F
+s0

@@ -1,7 +1,8 @@
-#.vim/autoload
-#.vim/plugged/
 **/*.zwc
-.oh-my-zsh/
 .config/oh-my-zsh/plugins/zsh-autosuggestions
 .config/oh-my-zsh/plugins/zsh-syntax-highlighting
 .config/oh-my-zsh/themes/powerlevel10k
+.oh-my-zsh/
+#.vim/autoload
+.vim/autoload/plug.vim
+.vim/plugged/
