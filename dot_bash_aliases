@@ -2,8 +2,13 @@ alias c='pygmentize -g -O style=gruvbox'
 alias cm='~/bin/chezmoi --color true'
 alias chezmoi='~/bin/chezmoi --color true'
 
-
 alias grep='grep --color'
+alias fgrep='fgrep --color=auto' 
+alias egrep='egrep --color=auto' 
+
+alias dir='dir --color=auto'    
+alias vdir='vdir --color=auto'  
+
 alias less='less -r'
 
 alias ls='ls --color'
