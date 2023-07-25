@@ -2,8 +2,8 @@ alias c='pygmentize -g -O style=gruvbox'
 alias cm='~/bin/chezmoi --color true'
 alias chezmoi='~/bin/chezmoi --color true'
 
-alias rebash = 'source ~/.bashrc'
-alias vibash = 'vi ~/.bashrc'
+alias rebash='source ~/.bashrc'
+alias vibash='vi ~/.bashrc'
 
 alias grep='grep --color'
 alias fgrep='fgrep --color=auto' 
