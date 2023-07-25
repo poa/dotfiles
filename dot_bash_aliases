@@ -6,11 +6,11 @@ alias rebash='source ~/.bashrc'
 alias vibash='vi ~/.bashrc'
 
 alias grep='grep --color'
-alias fgrep='fgrep --color=auto' 
-alias egrep='egrep --color=auto' 
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
-alias dir='dir --color=auto'    
-alias vdir='vdir --color=auto'  
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 
 alias less='less -r'
 
