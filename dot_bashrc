@@ -14,15 +14,15 @@ unameOut="$(uname -s)"
 case "${unameOut}" in
     Linux*)     machine=Linux;;
     Darwin*)    machine=Mac;;
-    CYGWIN*|MINGW*|MSYS_NT*)    machine=windows
-        ;;
+    CYGWIN*|MINGW*|MSYS_NT*)    machine=windows ;;
     *)          machine="UNKNOWN:${unameOut}"
 esac
+
+echo -e "Current OS:\t$(tput tbc; tput hts)$machine"
 
 # set -x # enable xtrace
 case $machine in
     windows)
-        echo Current OS: $machine
         export TERM=xterm-color
         export TMP=$HOME/tmp
         export TEMP=$TMP
@@ -35,9 +35,9 @@ esac
 # set +x # disable xtrace
 
 # If zsh used, do nothing
+echo -e "Shell:\t$SHELL"
 case $SHELL in
     *zsh*)
-        echo Shell: $SHELL
         return
         ;;
     *) ;;
