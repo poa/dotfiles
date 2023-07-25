@@ -1,9 +1,13 @@
 **/*.zwc
+**/cache/
+.bash_history
 # .config/oh-my-zsh/plugins/zsh-autosuggestions
 # .config/oh-my-zsh/plugins/zsh-syntax-highlighting
 # .config/oh-my-zsh/themes/powerlevel10k
 # .oh-my-zsh/
-.oh-my-zsh/cache/
-#.vim/autoload
+# .oh-my-zsh/cache/
+.python_history
+# .vim/autoload
 # .vim/autoload/plug.vim
 .vim/plugged/
+.viminfo
