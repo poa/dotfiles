@@ -7,12 +7,14 @@
  "Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
  Plug 'Yggdroot/indentLine'
  Plug 'airblade/vim-gitgutter'
- Plug 'christoomey/vim-tmux-navigator'
- Plug 'junegunn/vim-easy-align'
+ Plug 'machakann/vim-highlightedyank'
  Plug 'michaeljsmith/vim-indent-object'
+ Plug 'junegunn/vim-easy-align'
+ Plug 'christoomey/vim-tmux-navigator'
  Plug 'poa/vim-toml', { 'branch': 'main' }
  Plug 'ryanoasis/vim-devicons'
  Plug 'scrooloose/nerdtree'
+ Plug 'tpope/vim-commentary'
  Plug 'tpope/vim-fugitive'
 
  " Statuslines

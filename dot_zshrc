@@ -111,13 +111,16 @@ plugins=(
   helm
   kubectl
   minikube
+  nft
   ssh-agent
 #  vi-mode
   zsh-syntax-highlighting
   zsh-autosuggestions
 #  tmux
+  ufw
 )
 
+zstyle ':completion::complete:*' gain-privileges 1
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent lazy yes
 zstyle :omz:plugins:ssh-agent lifetime 4h

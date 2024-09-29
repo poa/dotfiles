@@ -3,7 +3,7 @@
 " import custom functions
 source ~/.vim/funcs.vim
 
-if has("autocmd")   
+if has("autocmd")
 
   " Install vim-plug if not found
   if empty(glob('~/.vim/autoload/plug.vim'))
@@ -17,22 +17,26 @@ if has("autocmd")
   \| endif
 
   " import plugins list
-  source ~/.vim/plugins.vim " include plugs
+  source ~/.vim/plugins.vim
 
   " Uncomment the following to have Vim jump to the last position when reopening a file
   autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 
   " Show misplaced whitespaces
-  autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+  autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkred guibg=darkred
   autocmd BufReadPost * call ShowWhitespace('est')
   let b:ws_show=1
   " match ExtraWhitespace /\s\+$\| \+\ze\t/
 
-" Trim trailing spaces before write
-"  autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+  " Trim trailing spaces before write
+  "  autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 endif  "has("autocmd")
+"
+" import keybindings
+source ~/.vim/keybindings.vim
+
 "
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
@@ -47,6 +51,7 @@ syntax on           " Turn syntax highlighting on.
 
 " Let cursor to be beyond the end of line
 set virtualedit=all
+
 " Add numbers to each line on the left-hand side.
 set number
 
@@ -93,50 +98,15 @@ set listchars=eol:¶,tab:»·,extends:>,precedes:< "For Unicode fonts
 """ Select color theme
 source ~/.vim/themes.vim
 
-""" air-line
+""" plug: air-line
 let g:airline_theme='gruvbox8'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 " let g:airline#extensions#tabline#tab_nr_type = 2
 " let g:airline#extensions#tabline#show_tab_nr = 1
-  let g:airline#extensions#tabline#buffer_idx_mode = 1
-  nmap <leader>1 <Plug>AirlineSelectTab1
-  nmap <leader>2 <Plug>AirlineSelectTab2
-  nmap <leader>3 <Plug>AirlineSelectTab3
-  nmap <leader>4 <Plug>AirlineSelectTab4
-  nmap <leader>5 <Plug>AirlineSelectTab5
-  nmap <leader>6 <Plug>AirlineSelectTab6
-  nmap <leader>7 <Plug>AirlineSelectTab7
-  nmap <leader>8 <Plug>AirlineSelectTab8
-  nmap <leader>9 <Plug>AirlineSelectTab9
-  nmap <leader>0 <Plug>AirlineSelectTab0
-  nmap <leader>- <Plug>AirlineSelectPrevTab
-  nmap <leader>+ <Plug>AirlineSelectNextTab
+let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 """ plug: bufferline
 let g:bufferline_show_bufnr = 1
 let g:bufferline_echo = 0
 
-
-
-" ========================================
-" Keybindings
-
-nmap     <F8> :call StripTrailingWhitespaces() <CR>
-nnoremap <F9> :call ToggleShowWhitespace()<CR>
-" highlight ExtraWhitespace ctermbg=red guibg=red
-nmap    <F10> :q <CR>
-
-" Toggle special symbols
-"nmap    <F12>   :set cursorcolumn! cursorline! list! number!<CR>
-nmap <F12>  :set list! number! <CR>
-           \:IndentLinesToggle <CR>
-           \:GitGutterBufferToggle <CR>
-" nnoremap <Leader>ws :call ToggleShowWhitespace()<CR>
-
-nnoremap vv <c-v>
-nnoremap <Tab> >>_
-nnoremap <S-Tab> <<_
-inoremap <S-Tab> <C-D>
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv

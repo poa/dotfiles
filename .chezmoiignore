@@ -11,3 +11,4 @@
 # .vim/autoload/plug.vim
 .vim/plugged/
 .viminfo
+.zsh_history
