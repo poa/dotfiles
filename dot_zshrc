@@ -111,11 +111,12 @@ plugins=(
   helm
   kubectl
   minikube
-  nft
   ssh-agent
 #  vi-mode
-  zsh-syntax-highlighting
   zsh-autosuggestions
+  # zsh-nft-completion
+  nft
+  zsh-syntax-highlighting
 #  tmux
   ufw
 )
